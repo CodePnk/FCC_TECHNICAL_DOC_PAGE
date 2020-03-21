@@ -1,14 +1,47 @@
+/* NAV STYLES */
 #navbar {
-    position: absolute;
+    position: fixed;
     left: 0;
+    overflow-y: scroll;
     width: 300px;
+    background-color: grey;
+    height: 100%;
 }
+
+#nav-head {
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+}
+
+.nav-item {
+   text-align: center;
+   padding: 15px;
+   border-top: black solid 1px;
+}
+
+.nav-link {
+    color: white;
+    display: block; //makes nav-item fully clickable
+    height: 100%;
+}
+
+.nav-item:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+
+
+
 
 #main-doc {
     position: relative;
     margin-left: 300px;
 }
-
+.main-section {
+    margin-bottom: 400px;
+}
 @media only screen and (max-width:600px) {
     body {
         display: none;
